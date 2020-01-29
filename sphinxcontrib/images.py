@@ -317,9 +317,9 @@ def configure_backend(app):
     # because sphinx try to make a pickle from it.
     app.sphinxcontrib_images_backend = backend
 
-    app.info('Initiated sphinxcontrib-images backend: ', nonl=True)
-    app.info('`{}`'.format(str(backend.__class__.__module__ +
-                           ':' + backend.__class__.__name__)))
+    #app.info('Initiated sphinxcontrib-images backend: ', nonl=True)
+    #app.info('`{}`'.format(str(backend.__class__.__module__ +
+    #                       ':' + backend.__class__.__name__)))
 
     def backend_methods(node, output_type):
         def backend_method(f):
